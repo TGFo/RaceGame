@@ -58,7 +58,12 @@ public class SpringDamp : MonoBehaviour
 
             suspensionForce = (offset * springStrength) - (springVelocityMagnitude * springDamper);
 
-            carRigidBody.AddForceAtPosition(springForceDir * suspensionForce, wheelPos.position);
+            carRigidBody.AddForceAtPosition(springForceDir * suspensionForce, wheelPos.position, ForceMode.Force);
         }
+    }
+
+    public float GetSpringRestLength()
+    {
+        return springRestLength;
     }
 }

@@ -29,7 +29,7 @@ public class MoveInput : MonoBehaviour
     private void SetMove(InputAction.CallbackContext ctx)
     {
         inputMove = ctx.ReadValue<Vector2>();
-        Debug.Log(inputMove.ToString());
+        //Debug.Log("input vector:" + inputMove.ToString());
     }
 
 }

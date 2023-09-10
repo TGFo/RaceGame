@@ -11,6 +11,8 @@ public class BasicMovement : MonoBehaviour
     public float speedMult = 10;
     Transform tireTransform;
     public bool isFrontTire = true;
+    public bool isDriveWheel = true;
+    RaycastHit hit;
     private void Start()
     {
         tireTransform = GetComponent<Transform>();
@@ -19,11 +21,18 @@ public class BasicMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        moveVector = GetInput().z * transform.forward;
-        carRigidbody.AddForceAtPosition(moveVector * speedMult, tireTransform.position, ForceMode.Acceleration);
-        if(isFrontTire)
+        if (Physics.Raycast(transform.position, -tireTransform.up, out hit, GetComponent<SpringDamp>().GetSpringRestLength()))
         {
-            carRigidbody.AddRelativeTorque(turnVect, ForceMode.Acceleration);
+            moveVector = GetInput().z * transform.forward;
+            if (isDriveWheel)
+            {
+                carRigidbody.AddForceAtPosition(moveVector * speedMult, tireTransform.position, ForceMode.Acceleration);
+            }
+            if (isFrontTire && transform.forward != Vector3.zero)
+            {
+                carRigidbody.AddRelativeTorque(turnVect, ForceMode.Acceleration);
+            }
+            //Debug.Log("velocity:" + carRigidbody.velocity);
         }
     }
     private Vector3 GetInput()
