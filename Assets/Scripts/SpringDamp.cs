@@ -66,4 +66,9 @@ public class SpringDamp : MonoBehaviour
     {
         return springRestLength;
     }
+
+    //code and comments and theory adapted from
+    /* 
+     Making Custom Car Physics in Unity (for Very Very Valet). 2022. YouTube video, added by Toyful Games. [Online]. Available at: https://www.youtube.com/watch?v=CdPYlj5uZeI&t=1s [Accessed 6 September 2023].
+    */
 }
