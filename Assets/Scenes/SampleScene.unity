@@ -641,6 +641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3173636604730732533, guid: 53054720501903849ad772646a5b3aa2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4923067319276979093, guid: 53054720501903849ad772646a5b3aa2, type: 3}
       propertyPath: DialogueFile
       value: 
