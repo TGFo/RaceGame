@@ -1,0 +1,34 @@
+{
+  "nonPlayerDialogue": [
+    {
+      "npcName": "Announcer",
+      "npcDialogue": "Alright ladies, gentlemen and speed demons of all ages it's that time for the annual racing tournament",
+      "portraitFileName": "gade_face2"
+    },
+    {
+      "npcName": "Announcer",
+      "npcDialogue": "Let’s go over a refresher for all our newbies ",
+      "portraitFileName": "gade_face2"
+    },
+    {
+      "npcName": "Announcer",
+      "npcDialogue": "There are three types of races",
+      "portraitFileName": "gade_face2"
+    },
+    {
+      "npcName": "Announcer",
+      "npcDialogue": "First off is the checkpoint race, you gotta get to the end of the track by following all the markers before the clock hits zero –",
+      "portraitFileName": "gade_face2"
+    },
+    {
+      "npcName": "Random Audience Member",
+      "npcDialogue": "GET OFF THE STAGE!",
+      "portraitFileName": "gade_face1"
+    },
+    {
+      "npcName": "Announcer",
+      "npcDialogue": "Each checkpoint passed adds to the clock and the race is won once all checkpoints have been passed.",
+      "portraitFileName": "gade_face2"
+    }
+  ]
+}

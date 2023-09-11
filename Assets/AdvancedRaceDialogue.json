@@ -1,0 +1,39 @@
+{
+  "nonPlayerDialogue": [
+    {
+      "npcName": "Announcer",
+      "npcDialogue": "Alright ladies, gentlemen and speed demons of all ages it's that time for the annual racing tournament",
+      "portraitFileName": "gade_face2"
+    },
+    {
+      "npcName": "Announcer",
+      "npcDialogue": "Let’s go over a refresher for all our newbies ",
+      "portraitFileName": "gade_face2"
+    },
+    {
+      "npcName": "Announcer",
+      "npcDialogue": "There are three types of races",
+      "portraitFileName": "gade_face2"
+    },
+    {
+      "npcName": "Announcer",
+      "npcDialogue": "And finally is the real deal, the main event. All of the racers will compete against each other in a cutthroat race to become the champion.",
+      "portraitFileName": "gade_face2"
+    },
+    {
+      "npcName": "Random Audience Member",
+      "npcDialogue": "GET TO THE POINT!",
+      "portraitFileName": "gade_face1"
+    },
+    {
+      "npcName": "Announcer",
+      "npcDialogue": "Why are you here?",
+      "portraitFileName": "gade_face2"
+    },
+    {
+      "npcName": "Announcer",
+      "npcDialogue": " Who let you in?",
+      "portraitFileName": "gade_face2"
+    }
+  ]
+}
