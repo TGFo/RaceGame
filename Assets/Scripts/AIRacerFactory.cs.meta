@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 70e9046d0d6d90744a49cf49df807fa5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - racer1: {instanceID: 0}
+  - racer2: {instanceID: 0}
+  - racer3: {instanceID: 0}
+  - defaultRacerPrefab: {fileID: 3638607322975547743, guid: c299a0dcbcfbb154fb6d6bfb595dc4b2, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

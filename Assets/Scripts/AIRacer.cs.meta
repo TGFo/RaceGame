@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9f889d725053966488544b98d7563416
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - racerAI: {instanceID: 0}
+  - appearence: {fileID: 3638607322975547743, guid: c299a0dcbcfbb154fb6d6bfb595dc4b2, type: 3}
+  - racerInstance: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
