@@ -229,6 +229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueManager 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4621587589242547430, guid: 53054720501903849ad772646a5b3aa2, type: 3}
+      propertyPath: nextScene
+      value: BeginnerRace
+      objectReference: {fileID: 0}
     - target: {fileID: 4923067319276979093, guid: 53054720501903849ad772646a5b3aa2, type: 3}
       propertyPath: DialogueFile
       value: 

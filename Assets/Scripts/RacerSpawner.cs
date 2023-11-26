@@ -8,7 +8,9 @@ public class RacerSpawner : MonoBehaviour
     [SerializeField] Transform[] startPositions;
     [SerializeField] GameObject startPositionParent;
     [SerializeField] GameObject defaultRacerPrefab;
+    [SerializeField] bool beginner = true;
     public WaypointManager waypointManager;
+    public AdvancedWaypointManager advancedManger;
     void Start()
     {
         //delays the instatiation of any airacers for a single frame so as to allow the linked list to be populated so it can be used to start movement on game start
@@ -18,7 +20,8 @@ public class RacerSpawner : MonoBehaviour
     {
         IRacer racerInstance =  racerFactory.CreateRacer(racerType);
         racerInstance.AddInstance(startPos.position);
-        racerInstance.MoveTo(waypointManager.waypointsLinked.First.Value);
+        if(beginner == true) racerInstance.MoveTo(waypointManager.firstWaypoint);
+        else racerInstance.MoveTo(advancedManger.firstWaypoint.node.Value);
     }
     IEnumerator DelayedStart()
     {

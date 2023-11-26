@@ -8,14 +8,17 @@ using UnityEngine;
 public class RaceUIManager : MonoBehaviour
 {
     WaypointManager waypointManager;
+    AdvancedWaypointManager advancedWaypointManager;
     GameObject player;
     [SerializeField] TMP_Text positionText;
     [SerializeField] TMP_Text lapText;
     public int currentLap = 0;
     [SerializeField] private int maxLaps = 3;
+    public bool beginner = true;
     void Start()
     {
-        waypointManager = FindAnyObjectByType<WaypointManager>();
+        if(beginner)waypointManager = FindAnyObjectByType<WaypointManager>();
+        else advancedWaypointManager= FindAnyObjectByType<AdvancedWaypointManager>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -24,6 +27,7 @@ public class RaceUIManager : MonoBehaviour
     {
         currentLap = player.GetComponent<PlayerPassedPoints>().currentLap;
         lapText.text = currentLap.ToString() + " / " + maxLaps.ToString();
-        positionText.text = (Array.IndexOf(waypointManager.SortPositions(), player) + 1).ToString() + " / " + waypointManager.racersObjects.Length;
+        if(beginner)positionText.text = (Array.IndexOf(waypointManager.SortPositions(), player) + 1).ToString() + " / " + waypointManager.racersObjects.Length;
+        else positionText.text = (Array.IndexOf(advancedWaypointManager.SortPositions(), player) + 1).ToString() + " / " + advancedWaypointManager.racersObjects.Length;
     }
 }

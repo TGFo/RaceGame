@@ -4,5 +4,26 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/AdvancedRace.unity
+    guid: 9d7460a34a1e694468f368a1c88a2be0
+  - enabled: 1
+    path: Assets/Scenes/AdvancedRaceDialogue.unity
+    guid: 892ec536222604a42971463cb0d56c69
+  - enabled: 1
+    path: Assets/Scenes/BeginnerRace.unity
+    guid: 6965c3c5d852f6646a0ecd7535f40cf2
+  - enabled: 1
+    path: Assets/Scenes/BeginnerRaceDialogue.unity
+    guid: c810c2088401e07438ec1592617b2869
+  - enabled: 1
+    path: Assets/Scenes/CheckpointRace.unity
+    guid: 25fd518e3d879a74fbb32cbb45ce1248
+  - enabled: 1
+    path: Assets/Scenes/CheckpointRaceDialogue.unity
+    guid: 4a49d98322fb80f42be2f1ecfe210a73
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

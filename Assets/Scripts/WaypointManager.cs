@@ -12,6 +12,7 @@ public class WaypointManager : MonoBehaviour
     public LinkedList<Vector3> waypointsLinked = new LinkedList<Vector3>();
     List<GameObject> racerObjectList = new List<GameObject>();
     public GameObject[] racersObjects;
+    public Vector3 firstWaypoint;
     private void OnEnable()
     {
         waypoints = WaypointParent.GetComponentsInChildren<AIWaypoint>();
@@ -19,6 +20,7 @@ public class WaypointManager : MonoBehaviour
         {
             waypointsLinked.AddLast(waypoint.waypointTransform.position);
         }
+        firstWaypoint = waypointsLinked.First.Value;
         //waypointsLinked.AddFirst(waypointsLinked.Last.Value);
         Debug.Log(waypointsLinked.First);
     }
