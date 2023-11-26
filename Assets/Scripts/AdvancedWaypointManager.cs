@@ -13,6 +13,7 @@ public class AdvancedWaypointManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(DelayedPositions());
+        SFXManager.instance.PlaySound("raceStartBoom");
     }
 
     // Update is called once per frame

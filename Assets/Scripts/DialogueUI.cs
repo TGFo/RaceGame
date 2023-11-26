@@ -17,6 +17,7 @@ public class DialogueUI : MonoBehaviour
     private void Start()
     {
         NextDialogueLine();
+        SFXManager.instance.PlaySound("cheer1");
     }
     public void NextDialogueLine()
     {
@@ -26,6 +27,7 @@ public class DialogueUI : MonoBehaviour
             NPCName.text = currentNpc.npcName;
             NPCDialogue.text = currentNpc.npcDialogue;
             NPCPortrait.sprite = Resources.Load<Sprite>(currentNpc.portraitFileName);
+            SFXManager.instance.PlaySound("Blip1");
         }else SceneManager.LoadScene(nextScene);
     }
 }

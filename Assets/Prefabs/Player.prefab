@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5855671020058427369}
   - component: {fileID: 4233986545422502418}
   - component: {fileID: 375556780909180380}
+  - component: {fileID: 4522517784865896177}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -165,6 +166,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   passedPoints: 0
+  currentLap: 0
+--- !u!114 &4522517784865896177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963834311215349487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aa6695add0d1ac43ac2f1c3c8d14ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3360970683823320387
 GameObject:
   m_ObjectHideFlags: 0
