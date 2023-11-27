@@ -74,8 +74,9 @@ public class AdvancedWaypoint : MonoBehaviour
             {
                 other.GetComponent<PlayerPassedPoints>().passedPoints = 1;
                 other.GetComponent<PlayerPassedPoints>().currentLap++;
+                if (other.CompareTag("Player"))
+                SFXManager.instance.PlaySound("cheer2");
             }
-            SFXManager.instance.PlaySound("cheer2");
         }
     }
 }

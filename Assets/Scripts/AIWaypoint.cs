@@ -33,8 +33,9 @@ public class AIWaypoint : MonoBehaviour
             {
                 other.GetComponent<PlayerPassedPoints>().passedPoints = 1;
                 other.GetComponent<PlayerPassedPoints>().currentLap++;
+                if(other.CompareTag("Player"))
+                SFXManager.instance.PlaySound("cheer1");
             }
-            SFXManager.instance.PlaySound("cheer1");
         }
     }
 }

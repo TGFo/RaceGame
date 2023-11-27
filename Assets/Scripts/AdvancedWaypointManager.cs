@@ -12,6 +12,7 @@ public class AdvancedWaypointManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         StartCoroutine(DelayedPositions());
         SFXManager.instance.PlaySound("raceStartBoom");
     }

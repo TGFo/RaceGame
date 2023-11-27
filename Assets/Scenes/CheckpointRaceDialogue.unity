@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1095634664858060121, guid: 53054720501903849ad772646a5b3aa2, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3173636604730732533, guid: 53054720501903849ad772646a5b3aa2, type: 3}
       propertyPath: m_Name
       value: DialogueManager 1

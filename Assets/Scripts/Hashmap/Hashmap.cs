@@ -52,7 +52,8 @@ public class Hashmap<T>
     }
     public int GetBucketKey(string key)
     {
-        return Mathf.Abs(key.GetHashCode());
+        Debug.Log(Math.Abs(key.GetHashCode()) % buckets.Length);
+        return Math.Abs(key.GetHashCode()) % buckets.Length;
     }
     private (Node<T> previous, Node<T> current) GetNodeByKey(string key)
     {

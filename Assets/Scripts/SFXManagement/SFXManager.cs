@@ -23,10 +23,12 @@ public class SFXManager : MonoBehaviour
         {
             hashmap.Add(clip.name, clip);
         }
+        DontDestroyOnLoad(gameObject);
     }
     public void PlaySound(string soundName)
     {
         AudioClip clip = hashmap.Get(soundName);
+        Debug.Log(clip.name);
         audioSource.PlayOneShot(clip);
     }
 }

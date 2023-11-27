@@ -26,6 +26,7 @@ public class WaypointManager : MonoBehaviour
     }
     private void Start()
     {
+        Time.timeScale= 1.0f;
         StartCoroutine(DelayedPositions());
         SFXManager.instance.PlaySound("raceStartBoom");
     }
